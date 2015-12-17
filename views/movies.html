@@ -1,0 +1,21 @@
+<article class="movie" ng-repeat="movie in movies | filter:search:strict"
+         ng-mouseover="showTips($event)" ng-mouseleave="hideTips($event)" ng-mousemove="moveTipsBox($event)"
+         ng-drag-data="movie" ng-drag-start="onDragStart($data, $event)" ng-drag-stop="onDragStop($data, $event)"
+         ng-drag="true" ng-drag-success="onDragComplete($data,$event)">
+    <div class="show-hover">
+        <div class="movie-heading">
+            <h3>{{ movie.title }}</h3>
+            <span>-</span>
+            <h4>{{ movie.director }}</h4>
+        </div>
+    </div>
+    <img src="images/movies-pamphlets/{{ movie.image }}" alt="{{ movie.title }} pamphlet" />
+    <div class="movie-tips">
+        <p>duration : {{ movie.duration }} </p>
+        <p>genres : <span ng-repeat="genre in movie.genres">{{ genre }} </span></p> <!-- ng repeat -->
+        <p>writers : <span ng-repeat="writer in movie.writers">{{ writer }} </span> </p> <!-- ng repeat -->
+        <p>actors : <span ng-repeat="actor in movie.actors">{{ actor }} </span></p> <!-- ng repeat -->
+        <p>synopsys : {{ movie.synopsys }}</p>
+        <p>awards : {{ movie.awards }}</p>
+    </div>
+</article>

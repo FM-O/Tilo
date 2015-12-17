@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="tilo">
+<head lang="fr">
+    <meta charset="UTF-8">
+    <title>Tilo - Manage movies in the easiest way</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+</head>
+<body ng-controller="tiloController">
+    <div id="main-container">
+        <header>
+            <hgroup>
+                <h1>Welcome on Tilo Manager</h1>
+                <h2>Manage your movie collection in the easiest way</h2>
+            </hgroup>
+        </header>
+
+        <section>
+            <p class="title-section"><span>Tous les films</span></p>
+
+            <label for="search">Rechercher un film</label>
+            <input type="text" id="search" ng-model="search.title" />
+
+            <div id="movies-container" ng-include="route"></div>
+
+            <aside id="drop-area" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
+                <div ng-repeat="obj in droppedObjects" ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragSuccess($data,$event)">
+                    {{obj.title}}
+                </div>
+            </aside>
+        </section>
+
+
+        <footer>
+
+        </footer>
+    </div>
+    <script src="javascript/components/angular.js" type="text/javascript"></script>
+    <script src="javascript/components/postFix.js" type="text/javascript"></script>
+    <script src="javascript/components/route.js" type="text/javascript"></script>
+    <script src="javascript/components/angular-drag-and-drop.js" type="text/javascript"></script>
+    <script src="javascript/main.js" type="text/javascript"></script>
+</body>
+</html>

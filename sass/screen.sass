@@ -1,0 +1,112 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import "compass"
+
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic|Maven+Pro:400,500,700,900)
+
+html
+    font-size: 100%
+
+body
+    font-family: "Maven Pro", "Archivo Narrow", Helvetica, sans-serif
+
+#main-container
+    font-size: 2.5rem
+    header
+        background: #c9352c
+        color: #FFFFFF
+        padding: 20px
+        h1
+            font-size: 1em
+        h2
+            font-size: 0.6em
+            padding-left: 50px
+            margin-top: 5px
+    section
+        p.title-section
+            color: #FFFFFF
+            padding: 150px 0 30px 0
+            background: url("../images/abstract-head.jpg") center no-repeat
+            @include background-size(cover)
+            span
+                background: rgba(#c9352c, 0.5)
+                display: block
+                padding: 10px 0 10px 40px
+        #movies-container
+            @include inline-block
+            vertical-align: top
+            margin-top: 10px
+            width: 65%
+            article.movie
+                position: relative
+                z-index: 1
+                @include inline-block
+                vertical-align: top
+                width: 33%
+                font-size: 2rem
+                div.show-hover
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    text-align: center
+                    font-size: 1em
+                    div.movie-heading
+                        position: absolute
+                        top: 50%
+                        width: 100%
+                        padding: 20px 0
+                        background: rgba(#000, 0.3)
+                        color: #FFF
+                        @include transform(translateY(-50%))
+                        h3
+                            font-family: "Archivo Narrow", sans-serif
+                        span
+                            display: block
+                img
+                    width: 100%
+                div.movie-tips
+                    display: none
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    background: #FFF
+                    z-index: 99
+                    background: rgba(#000, 0.9)
+                    color: red
+                    padding: 20px
+                    @include border-radius(10px)
+                    p
+                        font-size: 0.4em
+                        margin-top: 5px
+                    &:before
+                        position: absolute
+                        top: 50%
+                        left: -15px
+                        content: ''
+                        display: block
+                        height: 0
+                        width: 0
+                        border-bottom: 15px solid transparent
+                        border-top: 15px solid transparent
+                        border-right: 15px solid rgba(#000, 0.9)
+        aside
+            @include inline-block
+            margin-top: 10px
+            width: 30%
+            height: 600px
+            background: blue
+            vertical-align: top
+            &.dragging
+                border: 5px dotted red
+            &.dragging-stop
+                border: none
+
+

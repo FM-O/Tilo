@@ -1,0 +1,261 @@
+[
+    {
+        "title": "Fight Club",
+        "year": "1999",
+        "duration": "139 min",
+        "genres": [
+            "Drama"
+        ],
+        "director": "David Fincher",
+        "writers": [
+            "Chuck Palahniuk (novel)",
+            "Jim Uhls (screenplay)"
+        ],
+        "actors": [
+            "Edward Norton",
+            "Brad Pitt",
+            "Helena Bonham Carter",
+            "Meat Loaf"
+        ],
+        "synopsys": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "awards": "Nominated for 1 Oscar. Another 7 wins & 25 nominations.",
+        "image": "fightclub.jpg"
+    },
+    {
+        "title": "2001: A Space Odyssey",
+        "year": "1968",
+        "duration": "149 min",
+        "genres": [
+            "Mystery",
+            "Sci-Fi"
+        ],
+        "director": "Stanley Kubrick",
+        "writers": [
+            "Stanley Kubrick (screenplay)",
+            "Arthur C. Clarke (screenplay)"
+        ],
+        "actors": [
+            "Keir Dullea",
+            "Gary Lockwood",
+            "William Sylvester",
+            "Daniel Richter"
+        ],
+        "synopsys": "\"2001\" is a story of evolution. Sometime in the distant past, someone or something nudged evolution by placing a monolith on Earth (presumably elsewhere throughout the universe as well). Evolution then enabled humankind to reach the moon's surface, where yet another monolith is found, one that signals the monolith placers that humankind has evolved that far. Now a race begins between computers (HAL) and human (Bowman) to reach the monolith placers. The winner will achieve the next step in evolution, whatever that may be.",
+        "awards": "Won 1 Oscar. Another 13 wins & 7 nominations.",
+        "image": "2001aspaceodyssey.jpg"
+    },
+    {
+        "title": "Dead Man",
+        "year": "1995",
+        "duration": "121 min",
+        "genres": [
+            "Drama",
+            "Fantasy",
+            "Western"
+        ],
+        "director": "Jim Jarmusch",
+        "writers": [
+            "Jim Jarmusch"
+        ],
+        "actors": [
+            "Johnny Depp",
+            "Gary Farmer",
+            "Crispin Glover",
+            "Lance Henriksen"
+        ],
+        "synopsys": "Dead Man is the story of a young man's journey, both physically and spiritually, into very unfamiliar terrain. William Blake travels to the extreme western frontiers of America sometime in the 2nd half of the 19th century. Lost and badly wounded, he encounters a very odd, outcast Native American, named \"Nobody\", who believes Blake is actually the dead English poet of the same name. The story, with Nobody's help, leads William Blake through situations that are in turn comical and violent. Contrary to his nature, circumstances transform Blake into a hunted outlaw, a killer, and a man whose physical existence is slowly slipping away. Thrown into a world that is cruel and chaotic, his eyes are opened to the fragility that defines the realm of the living. It is as though he passes through the surface of a mirror, and emerges into a previously-unknown world that exists on the other side.",
+        "awards": "4 wins & 10 nominations.",
+        "image": "deadman.jpg"
+    },
+    {
+        "title": "Interstellar",
+        "year": "2014",
+        "duration": "169 min",
+        "genres": [
+            "Adventure",
+            "Drama",
+            "Sci-Fi"
+        ],
+        "director": "Christopher Nolan",
+        "writers": [
+            "Jonathan Nolan",
+            "Christopher Nolan"
+        ],
+        "actors": [
+            "Ellen Burstyn",
+            "Matthew McConaughey",
+            "Mackenzie Foy",
+            "John Lithgow"
+        ],
+        "synopsys": "In the near future, Earth has been devastated by drought and famine, causing a scarcity in food and extreme changes in climate. When humanity is facing extinction, a mysterious rip in the space-time continuum is discovered, giving mankind the opportunity to widen its lifespan. A group of explorers must travel beyond our solar system in search of a planet that can sustain life. The crew of the Endurance are required to think bigger and go further than any human in history as they embark on an interstellar voyage into the unknown. Coop, the pilot of the Endurance, must decide between seeing his children again and the future of the human race.",
+        "awards": "Won 1 Oscar. Another 33 wins & 119 nominations.",
+        "image": "interstellar.jpg"
+    },
+    {
+        "title": "Fight Club",
+        "year": "1999",
+        "duration": "139 min",
+        "genres": [
+            "Drama"
+        ],
+        "director": "David Fincher",
+        "writers": [
+            "Chuck Palahniuk (novel)",
+            "Jim Uhls (screenplay)"
+        ],
+        "actors": [
+            "Edward Norton",
+            "Brad Pitt",
+            "Helena Bonham Carter",
+            "Meat Loaf"
+        ],
+        "synopsys": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "awards": "Nominated for 1 Oscar. Another 7 wins & 25 nominations.",
+        "image": "fightclub.jpg"
+    },
+    {
+        "title": "Pulp Fiction",
+        "year": "1994",
+        "duration": "154 min",
+        "genres": [
+            "Crime",
+            "Drama"
+        ],
+        "director": "Quentin Tarantino",
+        "writers": [
+            "Quentin Tarantino (story)",
+            "Roger Avary (story)",
+            "Quentin Tarantino"
+        ],
+        "actors": [
+            "Tim Roth",
+            "Laura Lovelace",
+            "John Travolta",
+            "Samuel L. Jackson"
+        ],
+        "synopsys": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        "awards": "Won 1 Oscar. Another 53 wins & 58 nominations.",
+        "image": "pulpfiction.jpg"
+    },
+    {
+        "title": "Reservoir Dogs",
+        "year": "1992",
+        "duration": "99 min",
+        "genres": [
+            "Crime",
+            "Drama"
+        ],
+        "director": "Quentin Tarantino",
+        "writers": [
+            "Quentin Tarantino",
+            "Roger Avary (background radio dialog)",
+            "Quentin Tarantino (background radio dialog)"
+        ],
+        "actors": [
+            "Harvey Keitel",
+            "Tim Roth",
+            "Michael Madsen",
+            "Chris Penn"
+        ],
+        "synopsys": "After a simple jewelery heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
+        "awards": "9 wins & 14 nominations.",
+        "image": "reservoirdogs.jpg"
+    },
+    {
+        "title": "Gladiator",
+        "year": "2000",
+        "duration": "155 min",
+        "genres": [
+            "Action",
+            "Drama"
+        ],
+        "director": "Ridley Scott",
+        "writers": [
+            "David Franzoni (story)",
+            "David Franzoni (screenplay)",
+            "John Logan (screenplay)",
+            "William Nicholson (screenplay)"
+        ],
+        "actors": [
+            "Russell Crowe",
+            "Joaquin Phoenix",
+            "Connie Nielsen",
+            "Oliver Reed"
+        ],
+        "synopsys": "Maximus is a powerful Roman general, loved by the people and the aging Emperor, Marcus Aurelius. Before his death, the Emperor chooses Maximus to be his heir over his own son, Commodus, and a power struggle leaves Maximus and his family condemned to death. The powerful general is unable to save his family, and his loss of will allows him to get captured and put into the Gladiator games until he dies. The only desire that fuels him now is the chance to rise to the top so that he will be able to look into the eyes of the man who will feel his revenge.",
+        "awards": "Won 5 Oscars. Another 52 wins & 100 nominations.",
+        "image": "gladiator.jpg"
+    },
+    {
+        "title": "Mad Max 2: The Road Warrior",
+        "year": "1981",
+        "duration": "94 min",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "director": "George Miller",
+        "writers": [
+            "Terry Hayes (screenplay)",
+            "George Miller (screenplay)",
+            "Brian Hannant (screenplay)"
+        ],
+        "actors": [
+            "Mel Gibson",
+            "Bruce Spence",
+            "Michael Preston",
+            "Max Phipps"
+        ],
+        "synopsys": "A former Australian policeman now living in the post-apocalyptic Australian outback as a warrior agrees to help a community of survivors living in a gasoline refinery to defend them and their gasoline supplies from evil barbarian warriors.",
+        "awards": "8 wins & 9 nominations.",
+        "image": "madmax2theroadwarrior.jpg"
+    },
+    {
+        "title": "1492: Conquest of Paradise",
+        "year": "1992",
+        "duration": "154 min",
+        "genres": [
+            "Adventure",
+            "Biography",
+            "Drama"
+        ],
+        "director": "Ridley Scott",
+        "writers": [
+            "Rose Bosch (scenario)"
+        ],
+        "actors": [
+            "G\u00e9rard Depardieu",
+            "Armand Assante",
+            "Sigourney Weaver",
+            "Loren Dean"
+        ],
+        "synopsys": "Big budget account of Christopher Columbus' discovery of the Americas. Released in 1992 to celebrate the 500th anniversary of the discovery. Shows the disastrous effects the Europeans had on the original inhabitants, and Columbus' struggle to civilize the New World.",
+        "awards": "Nominated for 1 Golden Globe. Another 1 nomination.",
+        "image": "1492conquestofparadise.jpg"
+    },
+    {
+        "title": "The Blind Swordsman: Zatoichi",
+        "year": "2003",
+        "duration": "116 min",
+        "genres": [
+            "Action",
+            "Comedy",
+            "Crime"
+        ],
+        "director": "Takeshi Kitano",
+        "writers": [
+            "Takeshi Kitano (screenplay)",
+            "Kan Shimozawa (novels)"
+        ],
+        "actors": [
+            "Takeshi Kitano",
+            "Tadanobu Asano",
+            "Michiyo Ohkusu",
+            "Taka Guadalcanal"
+        ],
+        "synopsys": "Blind Zatoichi makes his living by gambling and giving massages. But behind his humble facade, Zatoichi is a master swordsman, gifted with lightning-fast draw and strokes of breathtaking precision. Zatoichi wanders into a town run by sinister gangs and a powerful samurai. He's destined for violent showdowns when he stumbles on two beautiful geishas avenging their parents' murder... Duels, wit and a touch of zen! Cult anti-hero Zatoichi is back in a sword-fighting adventure written, directed and starring Takeshi Kitano.",
+        "awards": "21 wins & 10 nominations.",
+        "image": "theblindswordsmanzatoichi.jpg"
+    }
+]
