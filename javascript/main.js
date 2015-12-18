@@ -16,7 +16,9 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
     };
 
     $scope.onDropComplete=function(data, evt) {
+
         var index = $scope.droppedObjects.indexOf(data);
+
         if (index == -1)
             $scope.droppedObjects.push(data);
 
@@ -24,6 +26,11 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
     };
 
     $scope.onDragStart = function(data, evt) {
+
+        var draggingArticle = document.getElementById(data.title);
+
+        draggingArticle.style.cssText = "cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grabbing;";
+
         hideAllTips();
 
         var dropArea = document.getElementById("drop-area");
@@ -33,6 +40,9 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
     $scope.onDragStop = function(data, evt) {
         var dropArea = document.getElementById("drop-area");
+        var draggingArticle = document.getElementById(data.title);
+
+        draggingArticle.removeAttribute("style");
 
         dropArea.className = "dragging-stop";
     };
