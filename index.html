@@ -25,7 +25,7 @@
 
             <aside id="drop-area" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
                 <div ng-repeat="obj in droppedObjects" ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragSuccess($data,$event)">
-                    {{obj.title}}
+                    <h3>{{obj.title}}</h3>
                 </div>
             </aside>
         </section>

@@ -1,7 +1,7 @@
 <article class="movie" ng-repeat="movie in movies | filter:search:strict"
          ng-mouseover="showTips($event)" ng-mouseleave="hideTips($event)" ng-mousemove="moveTipsBox($event)"
          ng-drag-data="movie" ng-drag-start="onDragStart($data, $event)" ng-drag-stop="onDragStop($data, $event)"
-         ng-drag="true" ng-drag-success="onDragComplete($data,$event)">
+         ng-drag="true" ng-drag-success="onDragComplete($data,$event)" id="{{movie.title}}">
     <div class="show-hover">
         <div class="movie-heading">
             <h3>{{ movie.title }}</h3>

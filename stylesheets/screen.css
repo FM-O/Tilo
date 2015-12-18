@@ -215,16 +215,30 @@ body {
   *zoom: 1;
   *display: inline;
   margin-top: 10px;
+  padding: 20px;
   width: 30%;
-  height: 600px;
+  min-height: 600px;
   background: blue;
   vertical-align: top;
 }
-/* line 107, ../sass/screen.sass */
+/* line 108, ../sass/screen.sass */
 #main-container section aside.dragging {
   border: 5px dotted red;
 }
-/* line 109, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 #main-container section aside.dragging-stop {
   border: none;
+}
+/* line 112, ../sass/screen.sass */
+#main-container section aside div {
+  width: 100%;
+  margin-top: 30px;
+}
+/* line 115, ../sass/screen.sass */
+#main-container section aside div:first-child {
+  margin-top: 0;
+}
+/* line 117, ../sass/screen.sass */
+#main-container section aside div h3 {
+  text-align: center;
 }
