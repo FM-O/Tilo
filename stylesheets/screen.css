@@ -282,12 +282,33 @@ body {
   border: 2px solid #FFFFFF;
 }
 /* line 144, ../sass/screen.sass */
+#main-container section .content aside .create-new-list {
+  background: none;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 0.5em;
+  outline: none;
+  cursor: pointer;
+  -moz-transition: background 0.3s ease, color 0.3s;
+  -o-transition: background 0.3s ease, color 0.3s;
+  -webkit-transition: background 0.3s ease, color 0.3s;
+  transition: background 0.3s ease, color 0.3s;
+}
+/* line 155, ../sass/screen.sass */
+#main-container section .content aside .create-new-list:hover {
+  background: #FFFFFF;
+  color: #000;
+}
+/* line 158, ../sass/screen.sass */
 #main-container section .content aside h2 {
   color: #FFFFFF;
   text-align: center;
   font-size: 1em;
 }
-/* line 148, ../sass/screen.sass */
+/* line 162, ../sass/screen.sass */
 #main-container section .content aside div {
   width: 100%;
   margin-top: 30px;
@@ -299,11 +320,11 @@ body {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 155, ../sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 #main-container section .content aside div:first-child {
   margin-top: 0;
 }
-/* line 157, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 #main-container section .content aside div h3 {
   text-align: center;
   color: #950000;

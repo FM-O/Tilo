@@ -25,8 +25,16 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
         var index = $scope.droppedObjects.indexOf(data);
 
+        var duplicate = false;
+
         if (index == -1) {
-            $scope.droppedObjects.push(data);
+            for (var i = 0 ; i < $scope.droppedObjects.length ; i++) {
+                if ($scope.droppedObjects[i].title == data.title)
+                    duplicate = true;
+            }
+
+            if (!duplicate)
+                $scope.droppedObjects.push(data);
         }
 
         for (var n = 0 ; n < $scope.droppedObjects.length ; n++) {
@@ -36,24 +44,7 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
         favoriteList.addUnique("film", data.title);
         favoriteList.save();
 
-        console.log($scope.droppedObjects);
-
-        var query = new Parse.Query(FavoriteList);
-
-        query.find({
-            success: function(results) {
-                console.log("Successfully retrieved " + results.length + " titles.");
-                // Do something with the returned Parse.Object values
-                for (var i = 0; i < results.length; i++) {
-                    var object = results[i];
-                    console.log(object.id + ' - ' + object.get('film'));
-                    //object.destroy();
-                }
-            },
-            error: function(error) {
-                console.error("Error: " + error.code + " " + error.message);
-            }
-        });
+            //console.log($scope.droppedObjects);
     };
 
     $scope.onDragStart = function(data, evt) {
@@ -100,14 +91,6 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
         article.style.zIndex = "1";
     };
 
-    var hideAllTips = function() {
-        var allTips = document.getElementsByClassName("movie-tips");
-
-        for (var i = 0; i < allTips.length; i++) {
-            allTips[i].style.display = "none";
-        }
-    };
-
     $scope.moveTipsBox = function($event) {
 
         var article = $event.currentTarget;
@@ -137,23 +120,25 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
         query.find({
             success: function(results) {
-                console.log("Successfully retrieved " + results.length + " titles.");
+                //console.log("Successfully retrieved " + results.length + " titles.");
                 // Do something with the returned Parse.Object values
                 for (var i = 0; i < results.length; i++) {
                     var object = results[i];
-                    console.log(object.id + ' - ' + object.get('film'));
+                    //console.log(object.id + ' - ' + object.get('film'));
 
                     if (i < results.length - 1) { object.destroy(); }
 
                     datas.push(object.get("film"));
                 }
 
-                $scope.favorites = datas[datas.length-1];
-                for (var j = 0 ; j < $scope.favorites.length ; j++) {
-                    $scope.droppedObjects.push({title : $scope.favorites[j]});
+                if (datas.length > 0) {
+                    $scope.favorites = datas[datas.length-1];
+                    for (var j = 0 ; j < $scope.favorites.length ; j++) {
+                        $scope.droppedObjects.push({title : $scope.favorites[j]});
+                    }
                 }
 
-                console.log($scope.droppedObjects);
+                //console.log($scope.droppedObjects);
             },
             error: function(error) {
                 console.error("Error: " + error.code + " " + error.message);
@@ -161,4 +146,30 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
         });
 
     }();
+
+    $scope.createNewList = function () {
+        $scope.droppedObjects = [];
+
+        var query = new Parse.Query(FavoriteList);
+
+        query.find({
+            success: function(results) {
+                for (var i = 0; i < results.length; i++) {
+                    var object = results[i];
+                    //console.log(object.id + ' - ' + object.get('film'));
+
+                    object.destroy();
+                }
+            }
+        });
+        favoriteList = new FavoriteList();
+    };
+
+    var hideAllTips = function() {
+        var allTips = document.getElementsByClassName("movie-tips");
+
+        for (var i = 0; i < allTips.length; i++) {
+            allTips[i].style.display = "none";
+        }
+    };
 }]);
