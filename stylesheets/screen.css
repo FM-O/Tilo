@@ -107,14 +107,13 @@ body {
 }
 /* line 35, ../sass/screen.sass */
 #main-container section {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMGExMTRkIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDgwNzI0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(50%, #0a114d), color-stop(100%, #080724));
-  background-image: -moz-linear-gradient(#000000, #0a114d, #080724);
-  background-image: -webkit-linear-gradient(#000000, #0a114d, #080724);
-  background-image: linear-gradient(#000000, #0a114d, #080724);
+  background: #000 url("../images/blue-abstract-2.png") top no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
-/* line 37, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 #main-container section p.title-section {
   color: #000;
   padding: 20px 0 30px 0;
@@ -124,29 +123,29 @@ body {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 42, ../sass/screen.sass */
+/* line 44, ../sass/screen.sass */
 #main-container section p.title-section span {
   display: block;
   padding: 10px 0 10px 40px;
 }
-/* line 45, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 #main-container section .search-tools {
   position: relative;
   margin: 20px 0 0 60px;
   color: #FFFFFF;
 }
-/* line 49, ../sass/screen.sass */
+/* line 51, ../sass/screen.sass */
 #main-container section .search-tools label {
   position: absolute;
   top: 10px;
   margin-left: 10px;
 }
-/* line 53, ../sass/screen.sass */
+/* line 55, ../sass/screen.sass */
 #main-container section .search-tools label img {
   height: 30px;
   width: 30px;
 }
-/* line 56, ../sass/screen.sass */
+/* line 58, ../sass/screen.sass */
 #main-container section .search-tools input {
   background: none;
   height: 20px;
@@ -154,13 +153,18 @@ body {
   min-width: 240px;
   color: #FFFFFF;
   padding: 8px;
+  outline: none;
 }
-/* line 63, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
+#main-container section .search-tools input:focus {
+  border-color: #696b8c;
+}
+/* line 68, ../sass/screen.sass */
 #main-container section .content {
   width: 85%;
   margin: 50px auto auto auto;
 }
-/* line 66, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 #main-container section .content #movies-container {
   display: inline-block;
   vertical-align: middle;
@@ -171,8 +175,10 @@ body {
   margin-top: 10px;
   width: 65%;
 }
-/* line 71, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie {
+  background: #FFFFFF;
+  border: 2px solid #000;
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -181,50 +187,45 @@ body {
   *zoom: 1;
   *display: inline;
   vertical-align: top;
-  width: 33%;
+  width: 27%;
   font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
 }
-/* line 78, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie:hover {
   cursor: -webkit-grab;
   cursor: -moz-grab;
 }
-/* line 81, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.6em;
 }
-/* line 89, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover div.movie-heading {
-  position: absolute;
-  top: 50%;
   width: 100%;
-  padding: 20px 0;
-  background: rgba(0, 0, 0, 0.3);
-  color: #FFF;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  color: #950000;
 }
-/* line 97, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover div.movie-heading h3 {
   font-family: "Archivo Narrow", sans-serif;
 }
-/* line 99, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover div.movie-heading span {
   display: block;
 }
-/* line 101, ../sass/screen.sass */
-#main-container section .content #movies-container article.movie img {
+/* line 100, ../sass/screen.sass */
+#main-container section .content #movies-container article.movie .img-container {
+  height: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+/* line 104, ../sass/screen.sass */
+#main-container section .content #movies-container article.movie .img-container img {
   width: 100%;
 }
-/* line 103, ../sass/screen.sass */
+/* line 106, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.movie-tips {
   display: none;
   position: absolute;
@@ -240,12 +241,12 @@ body {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 115, ../sass/screen.sass */
+/* line 118, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.movie-tips p {
   font-size: 0.4em;
   margin-top: 5px;
 }
-/* line 118, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.movie-tips:before {
   position: absolute;
   top: 50%;
@@ -258,42 +259,52 @@ body {
   border-top: 15px solid transparent;
   border-right: 15px solid rgba(0, 0, 0, 0.9);
 }
-/* line 129, ../sass/screen.sass */
+/* line 132, ../sass/screen.sass */
 #main-container section .content aside {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-  margin-top: 10px;
+  margin-top: 22px;
   padding: 20px;
-  width: 30%;
+  width: 24%;
   min-height: 600px;
-  background: blue;
+  border: 1px solid #FFFFFF;
   vertical-align: top;
 }
-/* line 137, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 #main-container section .content aside.dragging {
-  border: 5px dotted red;
+  border: 2px dashed #FFFFFF;
 }
-/* line 139, ../sass/screen.sass */
+/* line 142, ../sass/screen.sass */
 #main-container section .content aside.dragging-stop {
-  border: none;
+  border: 2px solid #FFFFFF;
 }
-/* line 141, ../sass/screen.sass */
+/* line 144, ../sass/screen.sass */
 #main-container section .content aside h2 {
   color: #FFFFFF;
+  text-align: center;
+  font-size: 1em;
 }
-/* line 143, ../sass/screen.sass */
+/* line 148, ../sass/screen.sass */
 #main-container section .content aside div {
   width: 100%;
   margin-top: 30px;
+  padding: 20px 0;
+  font-size: 0.6em;
+  background: url("../images/pellicule.gif") left repeat-x;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
-/* line 146, ../sass/screen.sass */
+/* line 155, ../sass/screen.sass */
 #main-container section .content aside div:first-child {
   margin-top: 0;
 }
-/* line 148, ../sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 #main-container section .content aside div h3 {
   text-align: center;
+  color: #950000;
 }
