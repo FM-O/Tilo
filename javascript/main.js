@@ -22,6 +22,17 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
             var duplicate = false;
 
+            var error = document.getElementById("error");
+
+            if (index != -1) {
+
+                error.className = "displayed";
+
+                setTimeout(function() {
+                    error.className = "hidden";
+                }, 1500);
+            }
+
             if (index == -1) {
                 for (var i = 0 ; i < $scope.droppedObjects.length ; i++) {
                     if ($scope.droppedObjects[i].title == data.title)
@@ -39,7 +50,6 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
                     $scope.droppedObjects.push(data);
                 } else {
-                    var error = document.getElementById("error");
 
                     error.className = "displayed";
 
@@ -71,6 +81,17 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
         var duplicate = false;
 
+        var error = document.getElementById("error");
+
+        if (index != -1) {
+
+            error.className = "displayed";
+
+            setTimeout(function() {
+                error.className = "hidden";
+            }, 1500);
+        }
+
         if (index == -1) {
             for (var i = 0 ; i < $scope.droppedObjects.length ; i++) {
                 if ($scope.droppedObjects[i].title == data.title)
@@ -88,7 +109,6 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
                     notif.className = "hidden";
                 }, 1500);
             } else {
-                var error = document.getElementById("error");
 
                 error.className = "displayed";
 
