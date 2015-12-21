@@ -14,6 +14,33 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
     $scope.droppedObjects = [];
 
+    $scope.addToCollection = function (data, evt) {
+
+
+        if (window.innerWidth < 769) {
+            var index = $scope.droppedObjects.indexOf(data);
+
+            var duplicate = false;
+
+            if (index == -1) {
+                for (var i = 0 ; i < $scope.droppedObjects.length ; i++) {
+                    if ($scope.droppedObjects[i].title == data.title)
+                        duplicate = true;
+                }
+
+                if (!duplicate)
+                    $scope.droppedObjects.push(data);
+            }
+
+            for (var n = 0 ; n < $scope.droppedObjects.length ; n++) {
+                favoriteList.addUnique("film", $scope.droppedObjects[n].title);
+            }
+
+            favoriteList.addUnique("film", data.title);
+            favoriteList.save();
+        }
+    };
+
     $scope.onDragSuccess=function(data, evt) {
         var index = $scope.droppedObjects.indexOf(data);
         if (index > -1) {
