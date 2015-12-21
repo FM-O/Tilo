@@ -28,8 +28,17 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
                         duplicate = true;
                 }
 
-                if (!duplicate)
+                if (!duplicate) {
+                    var notif = document.getElementById("notif");
+
+                    notif.className = "displayed";
+
+                    setTimeout(function() {
+                        notif.className = "hidden";
+                    }, 1500);
+
                     $scope.droppedObjects.push(data);
+                }
             }
 
             for (var n = 0 ; n < $scope.droppedObjects.length ; n++) {
@@ -101,12 +110,13 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
 
     $scope.showTips = function($event) {
 
-        var article = $event.currentTarget;
+        if (window.innerWidth > 768) {
+            var article = $event.currentTarget;
 
-        article.lastElementChild.style.display = "block";
+            article.lastElementChild.style.display = "block";
 
-        article.style.zIndex = "99";
-
+            article.style.zIndex = "99";
+        }
     };
 
     $scope.hideTips = function($event) {
