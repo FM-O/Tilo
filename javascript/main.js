@@ -69,8 +69,25 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
                     duplicate = true;
             }
 
-            if (!duplicate)
+            if (!duplicate) {
                 $scope.droppedObjects.push(data);
+
+                var notif = document.getElementById("notif");
+
+                notif.className = "displayed";
+
+                setTimeout(function() {
+                    notif.className = "hidden";
+                }, 1500);
+            } else {
+                var error = document.getElementById("error");
+
+                error.className = "displayed";
+
+                setTimeout(function() {
+                    error.className = "hidden";
+                }, 1500);
+            }
         }
 
         for (var n = 0 ; n < $scope.droppedObjects.length ; n++) {
