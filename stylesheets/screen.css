@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic|Maven+Pro:400,500,700,900);
-/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 /* line 18, ../sass/screen.sass */
-#notif, #error {
+#notif, #error, #updated-list {
   opacity: 0;
   width: 60%;
   margin: auto;
@@ -98,15 +98,15 @@ body {
   transition: opacity 300ms ease;
 }
 /* line 30, ../sass/screen.sass */
-#notif.displayed, .displayed#error {
+#notif.displayed, .displayed#error, .displayed#updated-list {
   opacity: 1;
 }
 /* line 32, ../sass/screen.sass */
-#notif.hidden, .hidden#error {
+#notif.hidden, .hidden#error, .hidden#updated-list {
   opacity: 0;
 }
 /* line 34, ../sass/screen.sass */
-#notif p, #error p {
+#notif p, #error p, #updated-list p {
   text-align: center;
   color: #FFFFFF;
   font-size: 1.5em;
@@ -117,50 +117,50 @@ body {
   background: rgba(255, 68, 86, 0.9);
 }
 
-/* line 41, ../sass/screen.sass */
+/* line 45, ../sass/screen.sass */
 #main-container {
   font-size: 2.5rem;
 }
-/* line 43, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 #main-container header {
   background: #040414;
   color: #FFFFFF;
   height: 300px;
   overflow: hidden;
 }
-/* line 48, ../sass/screen.sass */
+/* line 52, ../sass/screen.sass */
 #main-container header .heading-group {
   position: absolute;
   top: 150px;
   left: 50px;
 }
-/* line 52, ../sass/screen.sass */
+/* line 56, ../sass/screen.sass */
 #main-container header .heading-group h1 {
   font-size: 1em;
 }
-/* line 54, ../sass/screen.sass */
+/* line 58, ../sass/screen.sass */
 #main-container header .heading-group h2 {
   font-size: 0.6em;
   padding-left: 50px;
   margin-top: 5px;
 }
 @media screen and (max-width: 768px) {
-  /* line 43, ../sass/screen.sass */
+  /* line 47, ../sass/screen.sass */
   #main-container header {
     height: 200px;
   }
-  /* line 60, ../sass/screen.sass */
+  /* line 64, ../sass/screen.sass */
   #main-container header .heading-group {
     top: 35px;
     left: 15px;
     font-size: 80%;
   }
-  /* line 64, ../sass/screen.sass */
+  /* line 68, ../sass/screen.sass */
   #main-container header video {
     display: none;
   }
 }
-/* line 66, ../sass/screen.sass */
+/* line 70, ../sass/screen.sass */
 #main-container section {
   background: #000 url("../images/blue-abstract-2.png") top no-repeat;
   -moz-background-size: cover;
@@ -168,7 +168,7 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 70, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 #main-container section p.title-section {
   color: #000;
   padding: 20px 0 30px 0;
@@ -178,29 +178,29 @@ body {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 75, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 #main-container section p.title-section span {
   display: block;
   padding: 10px 0 10px 40px;
 }
-/* line 78, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 #main-container section .search-tools {
   position: relative;
   margin: 20px 0 0 60px;
   color: #FFFFFF;
 }
-/* line 82, ../sass/screen.sass */
+/* line 86, ../sass/screen.sass */
 #main-container section .search-tools label {
   position: absolute;
   top: 10px;
   margin-left: 10px;
 }
-/* line 86, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 #main-container section .search-tools label img {
   height: 30px;
   width: 30px;
 }
-/* line 89, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 #main-container section .search-tools input {
   background: none;
   height: 20px;
@@ -210,16 +210,16 @@ body {
   padding: 8px;
   outline: none;
 }
-/* line 97, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 #main-container section .search-tools input:focus {
   border-color: #696b8c;
 }
-/* line 99, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 #main-container section .content {
   width: 85%;
   margin: 50px auto auto auto;
 }
-/* line 102, ../sass/screen.sass */
+/* line 106, ../sass/screen.sass */
 #main-container section .content #movies-container {
   display: inline-block;
   vertical-align: middle;
@@ -231,13 +231,13 @@ body {
   width: 65%;
 }
 @media screen and (max-width: 768px) {
-  /* line 102, ../sass/screen.sass */
+  /* line 106, ../sass/screen.sass */
   #main-container section .content #movies-container {
     width: 100%;
     display: block;
   }
 }
-/* line 110, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie {
   background: #FFFFFF;
   border: 2px solid #000;
@@ -255,59 +255,59 @@ body {
   margin: 10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 110, ../sass/screen.sass */
+  /* line 114, ../sass/screen.sass */
   #main-container section .content #movies-container article.movie {
     width: 75%;
     display: block;
     margin: 10px auto;
   }
 }
-/* line 125, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie:hover {
   cursor: -webkit-grab;
   cursor: -moz-grab;
 }
-/* line 128, ../sass/screen.sass */
+/* line 132, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover {
   text-align: center;
   font-size: 0.6em;
 }
-/* line 131, ../sass/screen.sass */
+/* line 135, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover div.movie-heading {
   width: 100%;
   color: #950000;
 }
-/* line 134, ../sass/screen.sass */
+/* line 138, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover div.movie-heading h3 {
   font-family: "Archivo Narrow", sans-serif;
 }
-/* line 136, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.show-hover div.movie-heading span {
   display: block;
 }
-/* line 138, ../sass/screen.sass */
+/* line 142, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie .img-container {
   height: 100%;
   max-height: 200px;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
-  /* line 138, ../sass/screen.sass */
+  /* line 142, ../sass/screen.sass */
   #main-container section .content #movies-container article.movie .img-container {
     max-height: 100%;
   }
 }
-/* line 144, ../sass/screen.sass */
+/* line 148, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie .img-container img {
   width: 100%;
 }
-/* line 146, ../sass/screen.sass */
+/* line 150, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie .add-button {
   display: none;
   margin-top: 15px;
   text-align: center;
 }
-/* line 150, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie .add-button button {
   background: none;
   border: 1px solid #0c0d48;
@@ -317,12 +317,12 @@ body {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  /* line 146, ../sass/screen.sass */
+  /* line 150, ../sass/screen.sass */
   #main-container section .content #movies-container article.movie .add-button {
     display: block;
   }
 }
-/* line 159, ../sass/screen.sass */
+/* line 163, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.movie-tips {
   display: none;
   position: absolute;
@@ -338,12 +338,12 @@ body {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 171, ../sass/screen.sass */
+/* line 175, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.movie-tips p {
   font-size: 0.4em;
   margin-top: 5px;
 }
-/* line 174, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 #main-container section .content #movies-container article.movie div.movie-tips:before {
   position: absolute;
   top: 50%;
@@ -356,7 +356,7 @@ body {
   border-top: 15px solid transparent;
   border-right: 15px solid rgba(0, 0, 0, 0.9);
 }
-/* line 185, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 #main-container section .content aside {
   display: inline-block;
   vertical-align: middle;
@@ -370,15 +370,15 @@ body {
   border: 1px solid #FFFFFF;
   vertical-align: top;
 }
-/* line 193, ../sass/screen.sass */
+/* line 197, ../sass/screen.sass */
 #main-container section .content aside.dragging {
   border: 2px dashed #FFFFFF;
 }
-/* line 195, ../sass/screen.sass */
+/* line 199, ../sass/screen.sass */
 #main-container section .content aside.dragging-stop {
   border: 2px solid #FFFFFF;
 }
-/* line 197, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 #main-container section .content aside .create-new-list {
   background: none;
   padding: 20px;
@@ -394,18 +394,18 @@ body {
   -webkit-transition: background 0.3s ease, color 0.3s ease;
   transition: background 0.3s ease, color 0.3s ease;
 }
-/* line 208, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 #main-container section .content aside .create-new-list:hover {
   background: #FFFFFF;
   color: #000;
 }
-/* line 211, ../sass/screen.sass */
+/* line 215, ../sass/screen.sass */
 #main-container section .content aside h2 {
   color: #FFFFFF;
   text-align: center;
   font-size: 1em;
 }
-/* line 215, ../sass/screen.sass */
+/* line 219, ../sass/screen.sass */
 #main-container section .content aside div {
   width: 100%;
   margin-top: 30px;
@@ -417,28 +417,28 @@ body {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 222, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 #main-container section .content aside div:first-child {
   margin-top: 0;
 }
-/* line 224, ../sass/screen.sass */
+/* line 228, ../sass/screen.sass */
 #main-container section .content aside div h3 {
   text-align: center;
   color: #950000;
 }
 @media screen and (max-width: 768px) {
-  /* line 185, ../sass/screen.sass */
+  /* line 189, ../sass/screen.sass */
   #main-container section .content aside {
     display: block;
     width: 90%;
   }
 }
-/* line 230, ../sass/screen.sass */
+/* line 234, ../sass/screen.sass */
 #main-container footer {
   background: #000;
   padding: 50px 0;
 }
-/* line 233, ../sass/screen.sass */
+/* line 237, ../sass/screen.sass */
 #main-container footer h4 {
   text-align: center;
   font-size: 0.5em;

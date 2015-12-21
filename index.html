@@ -37,7 +37,7 @@
                 <aside id="drop-area" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
                     <button class="create-new-list" ng-click="createNewList()">Reset favorite list</button>
                     <h2>Films favoris</h2>
-                    <div ng-repeat="obj in droppedObjects" ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragSuccess($data,$event)">
+                    <div class="favorite-movie" ng-repeat="obj in droppedObjects" ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragSuccess($data,$event)">
                         <h3>{{obj.title}}</h3>
                     </div>
                 </aside>
@@ -51,6 +51,9 @@
     </div>
     <div id="notif">
         <p>Movie added to your collection</p>
+    </div>
+    <div id="updated-list">
+        <p>Your collection list has been successfully updated</p>
     </div>
     <div id="error">
         <p>This movie is already in your collection</p>

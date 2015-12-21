@@ -102,12 +102,21 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
                 $scope.droppedObjects.push(data);
 
                 var notif = document.getElementById("notif");
+                var updated = document.getElementById("updated-list");
 
-                notif.className = "displayed";
+                if (!evt.element[0].classList.contains("favorite-movie")) {
+                    notif.className = "displayed";
 
-                setTimeout(function() {
-                    notif.className = "hidden";
-                }, 1500);
+                    setTimeout(function() {
+                        notif.className = "hidden";
+                    }, 1500);
+                } else {
+                    updated.className = "displayed";
+
+                    setTimeout(function() {
+                        updated.className = "hidden";
+                    }, 1500);
+                }
             } else {
 
                 error.className = "displayed";
