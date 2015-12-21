@@ -38,6 +38,14 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
                     }, 1500);
 
                     $scope.droppedObjects.push(data);
+                } else {
+                    var error = document.getElementById("error");
+
+                    error.className = "displayed";
+
+                    setTimeout(function() {
+                        error.className = "hidden";
+                    }, 1500);
                 }
             }
 
