@@ -239,6 +239,14 @@ tilo.controller("tiloController", ["$scope", "$http", function($scope, $http) {
     }();
 
     $scope.createNewList = function () {
+        var deleteNotif = document.getElementById("list-deleted");
+
+        deleteNotif.className = "displayed";
+
+        setTimeout(function() {
+            deleteNotif.className = "hidden";
+        }, 1500);
+
         $scope.droppedObjects = [];
 
         var query = new Parse.Query(FavoriteList);
