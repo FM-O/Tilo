@@ -107,6 +107,7 @@ body
         .content
             width: 85%
             margin: 50px auto auto auto
+            max-width: 1920px
             #movies-container
                 @include inline-block
                 vertical-align: top
@@ -126,6 +127,8 @@ body
                     font-size: 2rem
                     padding: 10px
                     margin: 10px
+                    @media screen and (max-width: 1280px)
+                        width: 39%
                     @media screen and (max-width: 768px)
                         width: 75%
                         display: block
